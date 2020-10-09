@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Jyotirmay Barman | Awesome Dev</title>
+
+	<link rel="icon" href="favicon.ico" type="image/png" />
+
+	<link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
+	<link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<main>
+		<div class="intro">Hello, I'm Jyotirmay!</div>
+		<div class="tagline">All-Star Dev | Code Fanatic | Linux Hacker | Bleh</div>
+		<!-- Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
+		<div class="icons-social">
+			<a target="_blank" href="https://github.com/JyotirmayBarman"><i class="fab fa-github"></i></a>
+			<a target="_blank" href="https://twitter.com/JyotirmayBurman"><i class="fab fa-twitter"></i></a>
+			<a target="_blank" href="https://dev.to"><i class="fab fa-dev"></i></a>
+			<a target="_blank" href="https://stackoverflow.com"><i class="fab fa-stack-overflow"></i></a>
+			<a target="_blank" href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+			<a target="_blank" href="https://medium.com"><i class="fab fa-medium"></i></a>
+			<a target="_blank" href="https://www.freecodecamp.org"><i class="fab fa-free-code-camp"></i></a>
+			<a target="_blank" href="https://www.behance.net"><i class="fab fa-behance"></i></a>
+			<a target="_blank" href="https://codepen.io"><i class="fab fa-codepen"></i></a>
+    		</div>
+	</main>
+
+	<script>
+		window.onload =()=>{
+  			const css = ["css/themes/yellow-black.css", "css/themes/white-red.css",
+				   "css/themes/white-grey.css", "css/themes/white-blue.css",
+				   "css/themes/white-indigo.css","css/themes/grey-white.css",
+				   "css/themes/red-white.css","css/themes/green-white.css",
+				   "css/themes/indigo-white.css"];
+  			let randomFile = css[Math.round(Math.random()*(css.length-1))];
+
+  			var ss = document.createElement("link");
+
+  			ss.type = "text/css";
+  			ss.rel = "stylesheet";
+  			ss.href = randomFile;
+
+  			document.getElementsByTagName("head")[0].appendChild(ss);
+		}
+
+		
+	</script>
+</body>
+</html>
